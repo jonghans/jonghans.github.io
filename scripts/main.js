@@ -18,14 +18,14 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+    myHeading.innerHTML = '본 페이지는 제작 중입니다.. ' + myName;
   }
 }
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
+  myHeading.textContent = '본 페이지는 제작 중입니다. ' + storedName;
 }
 
 myButton.onclick = function() {
